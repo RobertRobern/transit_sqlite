@@ -214,7 +214,7 @@ class _CustDetailState extends State<CustDetail> {
                   maxLength: 10,
                   controller: phoneNumberCtrl,
                   keyboardType: TextInputType.number,
-                  validator: (val) => Validations.validatePhoneNumber(val),
+                  validator: (val) => Validations.validatePhoneNumber(int.parse(val)),
                   decoration: InputDecoration(
                     icon: Icon(Icons.dialpad),
                     hintText: "Enter your phone number",
